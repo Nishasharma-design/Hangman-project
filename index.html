@@ -5,30 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="word-list.js" defer></script>
-    <script src="script.js" defer></script>
-    
+    <script src="./Modules/script.js" type="module" defer></script>
+    <script src="./Modules/wordList.js" type="module" defer></script>
 </head>
 <body>
-    <div class="game-map">
-        <div class="content">
-        <img src="sad-smiley.png" alt="smiley">
-        <h4>Time Up!</h4>
-        <p>Correct word is: <b>rainbow</b></p>
-        <button class="play-again">Play Again</button> 
-        </div>
-    </div>
    <div class="container">
      <div class="box">
         <h1>Hangman-Game</h1>
-        <img src="4.jpg" alt="hangman">
+        <img id="hangman_images" src="images/0.jpg" alt="Hangman Image">
      </div>
      <div class="gameBox">
-        <ul class="displaying__Alphabet">
+        <ul class="displaying__Alphabet">"_ _ _ _ _ _"
         </ul>
-        <h4 class="hint_letter">
-            Hint: <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b>
-        </h4>
+
         <h4 class="guess_letter">
             Incorrect guesses: 
             <b>0 / 6</b>
@@ -37,5 +26,6 @@
         </div>
      </div>
    </div> 
+   <button id="replayGame">Replay Game</button>
 </body>
 </html>
